@@ -97,3 +97,46 @@ Go to http://0.0.0.0:4000/ and you will see a basic website that can be customis
 
 
 Performance and model comparison is in model_performance.py
+
+
+
+# Evaluation Criteria Input
+## Are there unit tests for the API?
+unittests/ApiTests.py
+
+## Are there unit tests for the model?
+unittests/ModelTests.py
+
+## Are there unit tests for the logging?
+unittests/LoggerTests.py
+
+## Can all of the unit tests be run with a single script and do all of the unit tests pass?
+
+/run-tests.py
+
+# Is there a mechanism to monitor performance?
+logger.py
+
+# Was there an attempt to isolate the read/write unit tests From production models and logs?
+using sl as prefix for production models and logs.
+For test no prefix is used
+
+
+# Does the API work as expected?
+ For example, can you get predictions for a specific country as well as for all countries combined?
+ 
+ app.py
+ 
+# Does the data ingestion exists as a function or script to facilitate automation?
+
+cslib.py
+# Where multiple models compared?
+model_performance.py
+# Did the EDA investigation use visualizations?
+notebooks/Part1 EDA.ipynb
+
+# Is everything containerized within a working Docker image?
+Dockerfile
+
+# Did they use a visualization to compare their model to the baseline model?
+
